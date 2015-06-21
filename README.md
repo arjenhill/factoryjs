@@ -6,4 +6,19 @@
 
 使用示范：
 
+```
+	var Dog = sFactory(function(proto, superProto){
+		proto.init = function(name) { //构造函数
+			this.name = name;
+		}
+		proto.move = function(meters){ //原型方法
+			console.log(this.name + " moved " + meters + " m.")
+		}
+	});
+	var a = new Dog("aaa")
+	var b = new Dog("bbb"); //无实例变化
+	a.move(1);
+	b.move(2);
+	
+```
 
