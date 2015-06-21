@@ -1,4 +1,4 @@
-    // fix 2015年6月22日
+        // fix by p_jiewang 2015年6月22日
 	var sFactory = (function(prototype, ownProperty, undefined){
 
 		function isObject(o) {
